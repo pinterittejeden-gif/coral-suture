@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Coral-Suture: Engineered Recruitment Scaffolds for Reef Restoration</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292f;
+            --text-muted: #57606a;
+            --accent-blue: #0969da;
+            --border-color: #d0d7de;
+            --panel-bg: #f6f8fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 22px;
+            padding: 8px 13px;
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            background-color: var(--panel-bg);
+            color: var(--text-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-home:hover {
+            background-color: #eef2f6;
+            border-color: #afb8c1;
+            text-decoration: none;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .meta-data {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .abstract, .disclaimer, .tldr {
+            background-color: var(--panel-bg);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+
+        .abstract h2, .disclaimer h2, .tldr h2 {
+            margin-top: 0;
+            font-size: 1.15rem;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .flow-step {
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .flow-arrow {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        h2.section-title {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img-wrapper {
+            background: #fafafa;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: #ffffff;
+        }
+
+        .figure-caption {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            text-align: left;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .list-panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .list-panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .list-panel li {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .references {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .references li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a class="back-home" href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">
+        ← Back to main page
+    </a>
+
+    <header>
+        <h1>Project Coral-Suture: Engineered Recruitment Scaffolds for Reef Restoration</h1>
+        <div class="meta-data">Conceptual Research Proposal & Marine Biomaterials Overview // System Model: Reef-building scleractinian corals</div>
+    </header>
+
+    <div class="disclaimer">
+        <h2>Project Status</h2>
+        <p>This page presents a hypothetical marine restoration and biomaterials design for portfolio and educational purposes. Project Coral-Suture has not been physically engineered, tested, or validated by me. The figures are reference visuals or conceptual placeholders and should not be interpreted as experimental data produced by this project.</p>
+    </div>
+
+    <div class="tldr">
+        <h2>Mechanism Summary</h2>
+        <p>Coral-Suture proposes a reef-safe scaffold that improves coral larval settlement by combining textured mineral geometry, settlement-cue conditioning, early-stage microbial stabilization, and modular reef deployment.</p>
+        <div class="flow">
+            <span class="flow-step">Degraded reef site</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Textured scaffold</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Settlement cues</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Larval attachment</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Juvenile coral growth</span>
+        </div>
+    </div>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>Coral reefs provide habitat structure, coastal protection, and biodiversity support, yet many reef systems are degraded by heat stress, disease, sedimentation, physical damage, and reduced coral recruitment. Current restoration approaches include coral gardening, nursery propagation, outplanting, larval reseeding, and artificial reef structures. Project Coral-Suture proposes a conceptual scaffold system designed to improve the earliest and most vulnerable phase of reef recovery: larval settlement and post-settlement survival.</p>
+        <p>The proposed platform combines a calcium-carbonate-compatible reef scaffold with millimeter-scale surface topography, micro-refuge cavities, crustose coralline algae-inspired settlement cues, and controlled microbial preconditioning. Rather than claiming to solve bleaching or rebuild reef ecosystems alone, Coral-Suture is framed as a restoration-support technology: a deployable interface that increases the probability that coral larvae encounter stable attachment surfaces, avoid sediment burial, and develop into juvenile colonies under monitored field conditions. The project emphasizes material compatibility, larval behavior, reef hydrodynamics, disease risk control, and long-term ecological monitoring.</p>
+    </div>
+
+    <h2 class="section-title">Methodological Specifications</h2>
+    <div class="grid">
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="1.png" alt="Artificial reef scaffold used for coral restoration">
+                <div class="figure-caption">Figure 1. Artificial reef or coral restoration structure used as a reference for modular underwater scaffold deployment.</div>
+            </div>
+            <div class="card-content">
+                <h3>1. Reef-Safe Scaffold Architecture</h3>
+                <p>The first design module is a mineral-compatible scaffold that physically imitates parts of reef skeleton architecture without functioning as a sealed artificial surface. The proposed material would use calcium carbonate, aragonite-like ceramic, reef-safe terracotta, or another marine-stable substrate with a pH and dissolution profile compatible with coral settlement. Its geometry would include pores, ridges, shaded micro-cavities, and flow-exposed edges to create protected attachment zones while still allowing seawater exchange, sediment flushing, and later biological overgrowth.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="2.png" alt="Coral nursery plugs supporting early coral attachment">
+                <div class="figure-caption">Figure 2. Coral nursery plugs used as a reference for early attachment, substrate conditioning, and juvenile growth support.</div>
+            </div>
+            <div class="card-content">
+                <h3>2. Larval Settlement Interface</h3>
+                <p>Coral-Suture targets larval recruitment through surface engineering rather than simply placing a block on the seafloor. Millimeter-scale ridges and grooves are proposed to modify near-surface flow, slowing larvae near the substrate and increasing the time available for settlement. The scaffold surface would also be conditioned with non-invasive biofilm and crustose coralline algae-associated cues, reflecting the role that natural reef surfaces can play in guiding coral larvae toward suitable settlement sites.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="3.png" alt="Microfragmentation and coral growth frame reference image">
+                <div class="figure-caption">Figure 3. Coral microfragmentation or nursery growth structure used as a reference for accelerated coral cover and colony expansion.</div>
+            </div>
+            <div class="card-content">
+                <h3>3. Microhabitat Stabilization & Early Growth</h3>
+                <p>After settlement, juvenile corals are vulnerable to sediment smothering, algal overgrowth, predation, and thermal stress. The scaffold therefore includes shallow recesses and elevated contact points that reduce direct sediment burial while keeping the coral exposed to water flow. A controlled microbial conditioning layer is proposed as a research variable, not a guaranteed probiotic cure. Its purpose would be to test whether beneficial reef-associated microbial communities can reduce opportunistic colonization and improve early tissue stability during the first months after settlement.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="4.png" alt="Suspended coral nursery deployment reference image">
+                <div class="figure-caption">Figure 4. Suspended coral nursery system used as a reference for monitored deployment, growth tracking, and staged outplanting.</div>
+            </div>
+            <div class="card-content">
+                <h3>4. Modular Deployment & Monitoring</h3>
+                <p>The scaffold is designed as a modular restoration unit rather than a permanent replacement for natural reef. Units would be seeded in nurseries or directly deployed during larval release events, then monitored through diver surveys, photogrammetry, and survival scoring. The design prioritizes reversibility and ecological accountability: if a module shows excessive algal fouling, disease association, instability, or poor settlement, it can be removed or redesigned before wider deployment.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Lifecycle & Risk Controls</h2>
+    <div class="list-panel">
+        <p><strong>Engineering controls proposed to reduce ecological, biological, and deployment failure modes:</strong></p>
+        <ul>
+            <li><strong>Material Compatibility:</strong> Coral-Suture avoids metals, toxic coatings, unstable polymers, and alkaline concrete chemistries that could alter local seawater conditions. Candidate materials must pass pH, leaching, abrasion, and dissolution testing before biological trials. The target is a reef-safe mineral interface that supports colonization without releasing harmful residues.</li>
+
+            <li><strong>Settlement Cue Control:</strong> Settlement cues are treated as a controlled conditioning layer rather than an uncontrolled biological coating. Any crustose coralline algae-associated cue, microbial film, or biochemical extract would need to be species-matched, locally sourced where appropriate, and screened for pathogens before deployment. This reduces the risk of moving disease or non-native organisms between reef sites.</li>
+
+            <li><strong>Sediment and Fouling Resistance:</strong> The scaffold geometry includes elevated ridges, open flow channels, and removable modules to reduce sediment burial and algal overgrowth. Field testing would compare flat surfaces against ridged and porous designs to determine which geometry maintains settlement space under real reef flow and turbidity conditions.</li>
+
+            <li><strong>Thermal Stress Limits:</strong> Coral-Suture does not claim to stop ocean warming or prevent bleaching. It is designed to improve the settlement environment and early survival probability, while thermal resilience must come from careful site choice, genotype diversity, symbiont compatibility, and monitoring during heat events. The system should not be deployed as a substitute for emissions reduction or reef-scale climate action.</li>
+
+            <li><strong>Disease and Genetic Diversity Controls:</strong> Nursery seeding and larval sourcing must avoid monoculture restoration. Proposed deployments should include genetically diverse coral cohorts and quarantine-style screening before outplanting. Modules showing tissue loss, disease signs, or abnormal microbial blooms would be isolated, removed, or excluded from scaling.</li>
+
+            <li><strong>Physical Stability and Storm Failure:</strong> Reef modules must remain stable under wave surge without damaging surrounding reef. Anchoring should be minimal, reversible, and site-specific. Failure testing would include current exposure, storm simulations, diver handling, and retrieval trials.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Proposed Phased Testing</h2>
+    <div class="list-panel">
+        <p><strong>Development pathway for validating the concept before open-reef deployment:</strong></p>
+        <ul>
+            <li><strong>Phase 1 — Material Screening:</strong> Test candidate scaffold materials for seawater stability, pH change, leaching, surface roughness, abrasion behavior, and compatibility with reef-safe handling.</li>
+
+            <li><strong>Phase 2 — Flow and Topography Trials:</strong> Compare flat, ridged, grooved, and porous surfaces in a flume tank to determine whether millimeter-scale texture improves larval contact time and settlement behavior under oscillatory reef-like flow.</li>
+
+            <li><strong>Phase 3 — Settlement Cue Validation:</strong> Condition scaffold surfaces with controlled biofilms, crustose coralline algae-associated cues, or untreated controls. Measure coral larval settlement rate, metamorphosis success, and early survival without claiming universal attraction across species.</li>
+
+            <li><strong>Phase 4 — Nursery Growth Trials:</strong> Rear settled juveniles on the best-performing scaffold designs in a land-based or ocean-based nursery. Monitor tissue health, algal fouling, microbial composition, skeletal growth, and survival under normal and mildly stressful conditions.</li>
+
+            <li><strong>Phase 5 — Pilot Outplanting:</strong> Deploy a small number of tagged modules at a permitted degraded reef site. Track survival, attachment stability, fish interaction, sediment accumulation, and surrounding reef impact through diver surveys and photogrammetry.</li>
+
+            <li><strong>Phase 6 — Long-Term Ecological Review:</strong> Evaluate whether the modules improve recruitment without creating new ecological problems. Success would require coral survival, low disease association, stable material behavior, natural overgrowth, and no measurable harm to nearby reef organisms.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">References</h2>
+    <div class="list-panel references">
+        <ol>
+            <li>NOAA. “Restoring Coral Reefs.” National Oceanic and Atmospheric Administration. <a href="https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs" target="_blank">https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs</a></li>
+
+            <li>Levenstein, M. A. et al. “Millimeter-scale topography enables coral larval settlement in wave-driven oscillatory flow.” <em>bioRxiv / arXiv</em>, 2022. <a href="https://arxiv.org/abs/2203.05645" target="_blank">https://arxiv.org/abs/2203.05645</a></li>
+
+            <li>Gysbers, D., Levenstein, M. A., & Juarez, G. “The effect of surface topography on benthic boundary layer flow: implications for marine larval transport and settlement.” <em>arXiv</em>, 2024. <a href="https://arxiv.org/abs/2401.17216" target="_blank">https://arxiv.org/abs/2401.17216</a></li>
+
+            <li>Ritson-Williams, R. et al. “New perspectives on ecological mechanisms affecting coral recruitment on reefs.” <em>Smithsonian Contributions to the Marine Sciences</em>, 2009. <a href="https://doi.org/10.5479/si.01960768.38.437" target="_blank">https://doi.org/10.5479/si.01960768.38.437</a></li>
+
+            <li>Peixoto, R. S. et al. “Beneficial Microorganisms for Corals: A Proposed Mechanism for Coral Health and Resilience.” <em>Frontiers in Microbiology</em>, 2017. <a href="https://doi.org/10.3389/fmicb.2017.00341" target="_blank">https://doi.org/10.3389/fmicb.2017.00341</a></li>
+
+            <li>Zhong, J. et al. “Cutting-edge 3D reconstruction solutions for underwater coral reef images: A review and comparison.” <em>arXiv</em>, 2025. <a href="https://arxiv.org/abs/2502.20154" target="_blank">https://arxiv.org/abs/2502.20154</a></li>
+        </ol>
+    </div>
+
+    <footer>
+        another trophy to my portfolio ig <br>
+        <span style="font-size: 0.75rem; color: #afb5bb;">Pinteritte - conceptual research proposal, writing, and website by me.</span>
+    </footer>
+</div>
+
+</body>
+</html>
