@@ -1,29 +1,23 @@
 # Coral-Suture
 
-Coral-Suture is a conceptual marine-restoration proposal for a retrievable mineral scaffold supporting coral larval settlement and early survival.
+could a removable mineral scaffold give coral larvae a better place to settle and survive?
 
-**Live proposal:** [pinterittejeden-gif.github.io/coral-suture](https://pinterittejeden-gif.github.io/coral-suture/)
+that's Coral-Suture. the idea is to combine useful surface texture, small refuge spaces, controlled settlement cues, and a design that can be tagged and removed again.
 
-## Research question
+**read the full thing:** [pinterittejeden-gif.github.io/coral-suture](https://pinterittejeden-gif.github.io/coral-suture/)
 
-Can settlement-scale texture and controlled biological conditioning improve coral recruitment enough to justify a new scaffold over simpler existing restoration materials?
+## where the idea stands
 
-## Evidence status
+- **what I found:** surface texture, near-surface flow, settlement cues, and handling methods can all affect coral recruitment.
+- **my leap:** put those factors together in one retrievable, reef-compatible module.
+- **the annoying problem:** coral species, sites, fouling, disease, storms, and timescales all behave differently.
+- **what I'm not claiming:** I haven't built or field-tested this, and it would not prevent bleaching or fix reef decline by itself.
 
-- **Established:** substrate topography, near-surface flow, settlement cues, and restoration handling can influence recruitment.
-- **Proposed:** integrating these factors into a tagged, retrievable, reef-compatible modular unit.
-- **Unknown:** species and site transferability, long-term fouling, disease association, storm stability, and ecological advantage.
-- **Not claimed:** bleaching prevention, reef-scale recovery, climate resilience, or field validation.
+## what's in here
 
-## Repository contents
+- `index.html` has the full idea, design gates, ecological stop conditions, roadmap, and papers.
+- every visual is drawn in HTML/CSS, so the page does not depend on external images.
 
-- `index.html` — proposal, evidence boundaries, design gates, controls, roadmap, and labeled references.
-- Code-native visuals — original HTML/CSS diagrams; no third-party raster images are required.
+if you find a bad assumption, missing paper, or easier restoration control I should compare against, open an issue.
 
-## Feedback and citation
-
-Suggested citation: **Pinteritte. “Coral-Suture: Recruitment Scaffolds for Reef Restoration.” BIOFOLIO concept proposal, version 1.1, 2026.**
-
-## License
-
-Website code is MIT-licensed. Original writing and code-native diagrams are CC BY 4.0. See [LICENSE.md](LICENSE.md).
+the code is MIT licensed; my writing and diagrams are CC BY 4.0. details are in [LICENSE.md](LICENSE.md).
