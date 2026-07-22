@@ -1,0 +1,117 @@
+:root {
+  --ink: #083c48;
+  --muted: #47717a;
+  --paper: #dff4ef;
+  --surface: #fffaf0;
+  --surface-soft: #c5ebe5;
+  --line: #74aaa8;
+  --dark: #05323d;
+  --accent: #ee6d58;
+  --accent-soft: #ffd9c9;
+  --accent-ink: #9d2f2b;
+  --warning: #703a18;
+  --warning-soft: #ffe7bb;
+  --yellow: #ffd75a;
+  --radius: 1.8rem;
+  --shadow: none;
+  font-family: "Avenir Next", Avenir, ui-sans-serif, system-ui, sans-serif;
+}
+
+body.theme-coral {
+  background:
+    radial-gradient(ellipse at 15% 9%, rgba(255,255,255,.82), transparent 32rem),
+    radial-gradient(ellipse at 88% 26%, rgba(65,178,181,.18), transparent 26rem),
+    linear-gradient(180deg, #dff4ef 0, #eaf7f1 45%, #f5ecda 100%);
+  color: var(--ink);
+  font-family: "Avenir Next", Avenir, ui-sans-serif, system-ui, sans-serif;
+}
+.theme-coral .proposal-shell { width: min(1240px, calc(100% - 2.5rem)); }
+.theme-coral .proposal-nav { padding: 1.4rem 0; border-bottom: 1px solid rgba(8,60,72,.2); }
+.theme-coral .proposal-nav a { color: var(--ink); }
+.theme-coral .status-pill { border: 0; border-radius: 999px; color: #fff; background: var(--accent); box-shadow: none; transform: none; }
+.theme-coral .tag { border: 1px solid rgba(8,60,72,.24); border-radius: 999px; color: var(--ink); background: rgba(255,255,255,.5); text-transform: uppercase; }
+.theme-coral .proposal-hero { min-height: 720px; grid-template-columns: 1fr 1fr; gap: 6rem; padding: 6rem 0 7rem; border: 0; }
+.theme-coral .eyebrow,
+.theme-coral .section-kicker { padding: 0; color: var(--accent-ink); background: transparent; transform: none; text-transform: uppercase; }
+.theme-coral h1,
+.theme-coral h2 { font-family: Iowan Old Style, Baskerville, Georgia, serif; font-weight: 400; letter-spacing: -.055em; }
+.theme-coral h1 { font-size: clamp(4.5rem, 9.6vw, 9rem); line-height: .78; color: var(--ink); }
+.theme-coral .proposal-dek { max-width: 610px; color: var(--ink); font-size: 1.2rem; line-height: 1.55; }
+.theme-coral .system-diagram { min-height: 530px; border: 0; border-radius: 43% 57% 59% 41% / 48% 43% 57% 52%; background: radial-gradient(circle at 55% 45%, rgba(255,255,255,.92) 0 14%, transparent 14.5%), repeating-radial-gradient(ellipse at 52% 48%, transparent 0 42px, rgba(8,60,72,.14) 43px 44px), linear-gradient(145deg, #8fd7cf, #f2a28d); box-shadow: 1.4rem 1.4rem 0 rgba(8,60,72,.08); transform: rotate(2deg); }
+.theme-coral .system-diagram::before,
+.theme-coral .system-diagram::after { border: 0; }
+.theme-coral .diagram-core { width: 9.5rem; border: 0; border-radius: 58% 42% 47% 53%; color: var(--ink); background: #fffaf0; box-shadow: 0 10px 35px rgba(8,60,72,.18); font-family: Iowan Old Style, Baskerville, Georgia, serif; transform: rotate(-2deg); }
+.theme-coral .diagram-node { border: 0; border-radius: 999px; color: var(--ink); background: rgba(255,250,240,.94); box-shadow: 0 5px 20px rgba(8,60,72,.13); }
+.theme-coral .diagram-caption { color: #164e59; }
+.theme-coral .disclosure { grid-template-columns: .7fr 1.3fr; padding: 1.5rem 1.8rem; border: 0; border-left: 7px solid var(--accent); border-radius: 0 1.2rem 1.2rem 0; background: rgba(255,250,240,.68); box-shadow: none; transform: none; }
+.theme-coral .disclosure strong { color: var(--ink); font: 600 1.15rem Iowan Old Style, Baskerville, Georgia, serif; }
+.theme-coral .disclosure p { color: var(--muted); }
+.theme-coral .visual-notes,
+.theme-coral .proposal-section { padding: 7.5rem 0; border-bottom: 1px solid rgba(8,60,72,.2); }
+.theme-coral .visual-notes-heading,
+.theme-coral .section-heading { grid-template-columns: 1.25fr .75fr; gap: 5rem; }
+.theme-coral .visual-notes-heading h2,
+.theme-coral .section-heading h2 { font-size: clamp(3rem, 6vw, 6.4rem); line-height: .9; }
+.theme-coral .visual-notes-heading > p:last-child,
+.theme-coral .section-heading > p { color: var(--muted); font-size: 1.03rem; }
+.theme-coral .photo-notes { gap: 1.2rem; align-items: stretch; }
+.theme-coral .photo-note { padding: 0; overflow: hidden; border: 0; border-radius: 13rem 13rem 1.5rem 1.5rem; background: rgba(255,250,240,.82); box-shadow: none; transform: none; }
+.theme-coral .photo-note:nth-child(even) { margin-top: 5rem; }
+.theme-coral .photo-note::before { display: none; }
+.theme-coral .photo-note img { height: 31rem; border: 0; filter: saturate(.86) contrast(1.03); }
+.theme-coral .photo-note figcaption { padding: 1.5rem; }
+.theme-coral .photo-note figcaption strong { font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.35rem; }
+.theme-coral .boundary-grid { grid-template-columns: 1fr; gap: .75rem; }
+.theme-coral .boundary-card { min-height: auto; display: grid; grid-template-columns: 11rem .85fr 1.15fr; gap: 2rem; align-items: center; padding: 1.3rem 1.5rem; border: 1px solid rgba(8,60,72,.2); border-radius: 999px; background: rgba(255,255,255,.43); box-shadow: none; transform: none; }
+.theme-coral .boundary-card h3 { margin: 0; font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.25rem; }
+.theme-coral .boundary-card p { margin: 0; color: var(--muted); }
+.theme-coral .boundary-card span,
+.theme-coral .mechanism-card span,
+.theme-coral .control-card span { color: var(--accent-ink); text-transform: uppercase; }
+.theme-coral .mechanism-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.theme-coral .mechanism-card { min-height: 330px; padding: 1.5rem; border: 0; border-radius: 6rem 6rem 1.2rem 1.2rem; background: var(--surface); box-shadow: 0 12px 35px rgba(8,60,72,.08); transform: none; }
+.theme-coral .mechanism-card:nth-child(even) { margin-top: 3rem; }
+.theme-coral .mechanism-card::after { right: 1rem; bottom: 1rem; width: 4rem; height: 4rem; border-color: rgba(238,109,88,.3); }
+.theme-coral .mechanism-card h3,
+.theme-coral .control-card h3 { font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.35rem; }
+.theme-coral .control-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.theme-coral .control-card { border: 0; border-radius: 1.2rem; background: #073d49; box-shadow: none; transform: none; }
+.theme-coral .control-card span { color: #ff9d86; }
+.theme-coral .control-card h3 { color: #fffaf0; }
+.theme-coral .control-card p { color: #b9d7d7; }
+.theme-coral .metrics-wrap { border: 1px solid rgba(8,60,72,.24); border-radius: 1.2rem; background: rgba(255,250,240,.72); box-shadow: none; }
+.theme-coral .metrics th { color: var(--ink); background: #b9e3dc; text-transform: uppercase; }
+.theme-coral .metrics th,
+.theme-coral .metrics td { border-bottom: 1px solid rgba(8,60,72,.16); }
+.theme-coral .roadmap { grid-template-columns: repeat(3, 1fr); border-top: 0; gap: .8rem; }
+.theme-coral .roadmap li { min-height: 240px; padding: 1.4rem; border: 1px solid rgba(8,60,72,.18); border-radius: 1.2rem; background: rgba(255,255,255,.35); }
+.theme-coral .roadmap li:nth-child(3n) { border-right: 1px solid rgba(8,60,72,.18); }
+.theme-coral .roadmap li::before { color: var(--accent-ink); }
+.theme-coral .roadmap h3 { font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.25rem; }
+.theme-coral .source-note { border: 0; border-radius: 1rem; color: var(--ink); background: #b9e3dc; transform: none; }
+.theme-coral .proposal-footer { color: var(--muted); }
+
+@media (max-width: 980px) {
+  .theme-coral .mechanism-grid { grid-template-columns: repeat(2, 1fr); }
+  .theme-coral .boundary-card { grid-template-columns: 8rem 1fr; border-radius: 1.5rem; }
+  .theme-coral .boundary-card p { grid-column: 2; }
+}
+@media (max-width: 780px) {
+  .theme-coral .proposal-hero,
+  .theme-coral .visual-notes-heading,
+  .theme-coral .section-heading { grid-template-columns: 1fr; }
+  .theme-coral .proposal-hero { min-height: auto; gap: 4rem; }
+  .theme-coral .system-diagram { min-height: 430px; }
+  .theme-coral .photo-note:nth-child(even),
+  .theme-coral .mechanism-card:nth-child(even) { margin-top: 0; }
+  .theme-coral .control-grid,
+  .theme-coral .roadmap { grid-template-columns: 1fr; }
+}
+@media (max-width: 540px) {
+  .theme-coral .proposal-shell { width: calc(100% - 1.2rem); }
+  .theme-coral .boundary-card { grid-template-columns: 1fr; border-radius: 1.2rem; }
+  .theme-coral .boundary-card p { grid-column: 1; }
+  .theme-coral .mechanism-grid { grid-template-columns: 1fr; }
+  .theme-coral .photo-note { border-radius: 7rem 7rem 1rem 1rem; }
+  .theme-coral .photo-note img { height: 21rem; }
+}
