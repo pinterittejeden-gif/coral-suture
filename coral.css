@@ -89,6 +89,9 @@ body.theme-coral {
 .theme-coral .roadmap li::before { color: var(--accent-ink); }
 .theme-coral .roadmap h3 { font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.25rem; }
 .theme-coral .source-note { border: 0; border-radius: 1rem; color: var(--ink); background: #b9e3dc; transform: none; }
+.theme-coral .inline-citation { color: var(--accent-ink); font-family: ui-monospace, monospace; font-size: .82em; font-style: normal; font-weight: 800; white-space: nowrap; }
+.theme-coral .references li { scroll-margin-top: 2rem; }
+.theme-coral .references li:target { outline: 2px solid var(--accent); outline-offset: .35rem; background: rgba(255,250,240,.7); }
 .theme-coral .proposal-footer { color: var(--muted); }
 
 @media (max-width: 980px) {
